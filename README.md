@@ -67,6 +67,8 @@ Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci
 
 After the succesfull workflow run open the workflow log in Github and open `Upload Plot Artifact` step. You can find link to download plot from the log. Download the plot file and it should look the following:
 
+![example plot](./example_plot.png)
+
 
 ### Bonus
 

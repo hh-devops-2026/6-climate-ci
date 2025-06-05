@@ -25,4 +25,6 @@ jobs:
         name: climate-plot
         path: output/plot.png
     - name: Run tests
-      run: PYTHONPATH=src pytest tests/ -v
+      env:
+        PYTHONPATH: src
+      run: pytest tests/ -v

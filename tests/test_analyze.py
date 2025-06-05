@@ -19,6 +19,6 @@ def test_analyze_and_plot_creates_output_file(tmp_path):
 
     # Run the function
     analyze_and_plot(input_csv, output_file)
-    
+
     # Verify that the output file was created
-    assert output_file.exists() 
+    assert output_file.exists()

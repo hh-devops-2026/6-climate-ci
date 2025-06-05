@@ -17,7 +17,7 @@ Implement a GitHub Actions workflow that:
 
 Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci.yml`) by implementing the following steps.
 
-1. Define Workflow Triggers
+1.) Define Workflow Triggers
 Make the workflow run when code is pushed or a pull request is made to the main branch.
 
 💡 Hint: Use on: with common GitHub events like push and pull_request.

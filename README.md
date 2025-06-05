@@ -32,7 +32,7 @@ Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci
 #### Step 1 Define Workflow Triggers
 - Make the workflow run when code is pushed or a pull request is made to the main branch.
 
-💡 Hint: Use on: with common GitHub events like push and pull_request.
+💡 Hint: Use ’on:’ with common GitHub events like push and pull_request.
 
 #### Step 2 Set the Runner Environment
 - Specify that the workflow should use a Linux-based virtual environment.

@@ -16,9 +16,7 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
     - name: Check code style
-      run: |
-        export PYTHONPATH=$GITHUB_WORKSPACE/src
-        flake8 src tests
+      run: flake8 src tests
     - name: Generate climate report plot
       run: python src/analyze.py data/demodata.csv output/plot.png
     - name: Upload plot artifact

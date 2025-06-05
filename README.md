@@ -82,7 +82,7 @@ After the succesfull workflow run open the workflow log in Github and open `Uplo
 Automatically deploy the plot to GitHub Pages on push to main.
 Add a step to CI that:
 - Downloads artifact output/plot.png (you can use action `download-artifact`)
-- Publish plot (you can use peaceiris/actions-gh-pages action)
+- Publish plot (you can use `peaceiris/actions-gh-pages` action)
 
 ## About the exercise
 This exercise has been created by Juha Hinkula and is licensed under the Creative Commons BY-NC-SA license.

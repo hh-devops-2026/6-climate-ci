@@ -69,5 +69,13 @@ After the succesfull workflow run open the workflow log in Github and open `Uplo
 
 <img src="./example_plot.png" alt="example plot" width="50%">
 
-### Bonus
+### Bonus: Publish Plot as GitHub Pages
 
+Automatically deploy the plot to GitHub Pages on push to main.
+
+Create a branch (e.g. gh-pages)
+
+Add a step to CI that:
+- Copies output/plot.png
+- Commits it to gh-pages
+- Resources: peaceiris/actions-gh-pages

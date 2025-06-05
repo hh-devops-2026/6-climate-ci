@@ -29,7 +29,7 @@ Specify that the workflow should use a Linux-based virtual environment.
 
 💡 Hint: Use the latest Ubuntu runner.
 
-3. **Checkout the Code**
+3.) **Checkout the Code**
    
 Include a step to make the code from your repository available in the workflow.
 

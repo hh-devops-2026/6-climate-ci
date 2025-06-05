@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
+
 def analyze_and_plot(input_csv, output_file):
     df = pd.read_csv(input_csv, parse_dates=["date"])
     df["month"] = df["date"].dt.month
@@ -16,6 +17,7 @@ def analyze_and_plot(input_csv, output_file):
     Path(output_file).parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(output_file)
     plt.close()
+
 
 if __name__ == "__main__":
     import argparse

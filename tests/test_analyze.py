@@ -1,7 +1,7 @@
 import os
 import tempfile
-import pandas as pd
 from src.analyze import analyze_and_plot
+
 
 def test_analyze_and_plot_creates_output():
     # Use the provided demo data

@@ -24,3 +24,6 @@ jobs:
       with:
         name: climate-plot
         path: output/plot.png
+    - name: Run tests
+      run: |
+        pytest tests/ -v

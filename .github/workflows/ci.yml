@@ -26,5 +26,5 @@ jobs:
         path: output/plot.png
     - name: Run tests
       env:
-        PYTHONPATH: ${{ github.workspace }}/src
+        PYTHONPATH: ${{ github.workspace }}
       run: pytest tests/ -v

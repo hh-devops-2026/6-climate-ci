@@ -1,30 +1,45 @@
 name: CI for Climate Insights
+
+# TODO: Define workflow to run in pull requests and pushes to the main branch.
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # TODO: pecify the runner environment to latest ubuntu..
+
     steps:
-    - uses: actions/checkout@v4
+    # TODO: Checkout the repository code.
+
+    # TODO: Set up the required programming language environment.
+    # For Python, this involves selecting the Python version.
     - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+ 
+    # TODO: Install project dependencies.
     - name: Install dependencies
-      run: pip install -r requirements.txt
+  
+    # TODO: Implement a code style check (linting).
+    # Example: flake8 <source_directory> <test_directory>
     - name: Check code style
-      run: flake8 src tests
+
+    # TODO: Execute the "analyze.py <input_csv> <output_file>" script.
+    # In this case, it's generating a plot.
+    # Ensure input and output paths are correct.
     - name: Generate climate report plot
-      run: python src/analyze.py data/demodata.csv output/plot.png
+  
+    # TODO: Upload build artifacts.
+    # This makes build outputs (like plots or reports) available after the workflow runs.
     - name: Upload plot artifact
-      uses: actions/upload-artifact@v4
+      uses:
       with:
-        name: climate-plot
-        path: output/plot.png
+        # Name the artifact to climate-plot.
+        name: 
+        # Specify the path to the artifact to output directory and file name is plot.png.
+        path: 
+
+    # 7. Run automated tests.
+    # This is a critical step to ensure code correctness.
     - name: Run tests
+      # TODO: Set up PYTHONPATH environment variable for tests.
       env:
-        PYTHONPATH: ${{ github.workspace }}
-      run: pytest tests/ -v
+         # environment variable to include the source directory.        
+      # Write the command to run tests.

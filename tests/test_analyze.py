@@ -1,7 +1,6 @@
-import pytest
 import pandas as pd
-from pathlib import Path
 from src.analyze import analyze_and_plot
+
 
 def test_analyze_and_plot_creates_output_file(tmp_path):
     # Create a simple test DataFrame
@@ -10,14 +9,14 @@ def test_analyze_and_plot_creates_output_file(tmp_path):
         'temperature': [10, 15, 20]
     }
     df = pd.DataFrame(data)
-    
+
     # Save test data to a temporary CSV file
     input_csv = tmp_path / "test_data.csv"
     df.to_csv(input_csv, index=False)
-    
+
     # Define output file path
     output_file = tmp_path / "test_output.png"
-    
+
     # Run the function
     analyze_and_plot(input_csv, output_file)
     

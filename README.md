@@ -56,7 +56,9 @@ Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci
 - Make the generated plot available as a downloadable artifact in GitHub Actions.
 
 💡 Hint: Use the official upload-artifact action.
+
 💡 Name: climate-plot
+
 💡 Path: The output/plot.png file
 
 9.) **Run Tests**

@@ -18,8 +18,7 @@ Your mission is to build and test this automation pipeline using GitHub Actions.
 Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci.yml`) by implementing the following steps.
 
 1.) **Define Workflow Triggers**
-
-Make the workflow run when code is pushed or a pull request is made to the main branch.
+- Make the workflow run when code is pushed or a pull request is made to the main branch.
 
 💡 Hint: Use on: with common GitHub events like push and pull_request.
 
@@ -65,3 +64,7 @@ Make the workflow run when code is pushed or a pull request is made to the main 
 
 💡 Hint: Use a Python test framework. The command to run tests is `pytest tests/ -v`
 💡 Hint: Set an environment variable `PYTHONPATH` and set its value `${{ github.workspace }}` so the test runner can find the src/ folder.
+
+### Result
+
+After the succesfull workflow run o

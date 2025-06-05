@@ -13,7 +13,13 @@ They have a functional Python script that utilizes these technologies:
 - matplotlib: A widely-used Python library for creating static, animated, and interactive data visualizations (often used for plotting graphs and charts). (You wrote "matlib" but the correct name is "matplotlib.")
 - pytest: A testing framework for Python, making it easy to write simple and scalable test cases for your code.
 - flake8: A tool for checking the style and quality of Python code, helping developers follow best practices and identify errors or formatting issue
-Your mission is to build and test this automation pipeline using GitHub Actions. 
+
+Python script `src/anayze.py`:
+-  Loads the data/temperature.csv file (daily temperature data).
+- Calculates the average temperature per month.
+- Draws a chart and saves it to the file.
+
+Your mission is to build and test this automation pipeline using GitHub Actions.
 
 ## Steps
 

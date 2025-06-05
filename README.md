@@ -15,7 +15,7 @@ Your mission is to build and test this automation pipeline using GitHub Actions.
 
 Implement a GitHub Actions workflow that:
 
-1. Installs dependencies via `pip install -r requirements.txt`
+1. Installs dependencies using `pip`
 2. Runs tests using `pytest`  
 3. Checks code style with flake8 linter 
 4. Executes the script `analyze.py` to generate a bar chart  

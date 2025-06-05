@@ -20,6 +20,7 @@ Python script `src/anayze.py`:
 - Draws a chart and saves it to the file.
 
 > NOTE
+> 
 > For this assignment, Python coding skills are not required. If you encounter linting errors, carefully review the logs and follow the instructions provided
 
 Your mission is to build and test this automation pipeline using GitHub Actions.

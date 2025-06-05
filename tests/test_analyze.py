@@ -2,6 +2,7 @@ from src.analyze import analyze_and_plot
 import os
 import tempfile
 
+
 def test_analyze_and_plot_creates_plot():
     input_csv = "data/demodata.csv"
     with tempfile.TemporaryDirectory() as tmpdir:

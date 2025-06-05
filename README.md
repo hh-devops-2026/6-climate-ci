@@ -1,3 +1,5 @@
+## CI Workflow
+
 Climate Insights is a startup company that analyzes historical temperature data to visualize monthly trends.
 The data team needs an automated CI pipeline to:
 
@@ -79,3 +81,8 @@ Add a step to CI that:
 - Copies output/plot.png
 - Commits it to gh-pages
 - Resources: peaceiris/actions-gh-pages
+
+## About the exercise
+This exercise has been created by Juha Hinkula and is licensed under the Creative Commons BY-NC-SA license.
+
+AI tools such as ChatGPT and GitHub Copilot have been used in the implementation of the task description, source code, data files and tests.

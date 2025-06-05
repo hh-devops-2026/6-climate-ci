@@ -15,12 +15,52 @@ Your mission is to build and test this automation pipeline using GitHub Actions.
 
 Implement a GitHub Actions workflow that:
 
-1. Installs dependencies using `pip`
-2. Runs tests using `pytest`  
-3. Checks code style with flake8 linter 
-4. Executes the script `analyze.py` to generate a bar chart  
-5. Uploads the plot as a build artifact
+Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci.yml`) by implementing the following steps.
 
-The `./github/workflows` directory contains the `ci.yml` file. You should complete the tasks marked as TODOs within this file.
+1. Define Workflow Triggers
+Make the workflow run when code is pushed or a pull request is made to the main branch.
 
-Here are some tips to steps:
+💡 Hint: Use on: with common GitHub events like push and pull_request.
+
+2. Set the Runner Environment
+Specify that the workflow should use a Linux-based virtual environment.
+
+💡 Hint: Use the latest Ubuntu runner.
+
+3. Checkout the Code
+Include a step to make the code from your repository available in the workflow.
+
+💡 Hint: Use an official GitHub-provided action for this.
+
+4. Set Up Python
+Configure the Python version used in the workflow.
+
+💡 Hint: Use an action that lets you choose the Python version (e.g., 3.11).
+
+5. Install Dependencies
+Install all Python libraries listed in requirements.txt.
+
+💡 Hint: Use pip with the provided `requirements.txt` file. The command is `pip install -r <file_name>`
+
+6. Lint the Code
+Add a step to check code style for both source and test directories.
+
+💡 Hint: Use flake8 to check src/ and tests/ folders. The command is `flake8 <folder_1> <folder_2>`
+
+7. Generate the Plot
+Run the analysis script that reads a CSV file and outputs a plot.
+
+💡 Hint: The script accepts input and output paths as arguments. The command is `python src/analyze.py <input_csv> <output_file>`. The csv file that contains data can be found from the `data` directory. The output file name should be `plot.png` and located in the `output` directory.
+
+8. Upload the Plot
+Make the generated plot available as a downloadable artifact in GitHub Actions.
+
+💡 Hint: Use the official upload-artifact action.
+💡 Name: climate-plot
+💡 Path: The output/plot.png file
+
+9. Run Tests
+Run automated tests to verify your script works correctly.
+
+💡 Hint: Use a Python test framework. The command to run tests is `pytest tests/ -v`
+💡 Hint: Set an environment variable `PYTHONPATH` and set its value `${{ github.workspace }}` so the test runner can find the src/ folder.

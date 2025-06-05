@@ -13,7 +13,7 @@ They have a functional Python script that utilizes these technologies:
 - flake8: A tool for checking the style and quality of Python code, helping developers follow best practices and identify errors or formatting issue
 Your mission is to build and test this automation pipeline using GitHub Actions. 
 
-Implement a GitHub Actions workflow that:
+### Steps
 
 Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci.yml`) by implementing the following steps.
 

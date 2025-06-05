@@ -5,7 +5,7 @@ from src.analyze import analyze_and_plot
 def test_analyze_and_plot_creates_output_file(tmp_path):
     # Create a simple test DataFrame
     data = {
-        'date': pd.date_range(start='2023-01-01', periods=3, freq='ME'),
+        'date': pd.date_range(start='2025-01-01', periods=3, freq='ME'),
         'temperature': [10, 15, 20]
     }
     df = pd.DataFrame(data)

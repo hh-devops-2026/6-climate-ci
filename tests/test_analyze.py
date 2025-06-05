@@ -22,4 +22,3 @@ def test_analyze_and_plot_creates_output_file(tmp_path):
 
     # Verify that the output file was created
     assert output_file.exists()
-    

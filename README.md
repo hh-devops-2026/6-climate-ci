@@ -89,7 +89,11 @@ Add a step to CI that:
 - Downloads artifact output/plot.png (you can use action `download-artifact`)
 - Publish plot (you can use `peaceiris/actions-gh-pages` action)
 
+
+
 ## About the exercise
 This exercise has been created by Juha Hinkula and is licensed under the Creative Commons BY-NC-SA license.
+
+The weather data used in this exercise has been downloaded from [the Finnish Meteorological Institute](https://ilmatieteenlaitos.fi/) using their [Download observations service](https://www.ilmatieteenlaitos.fi/havaintojen-lataus). The data is licensed under their [open data license](https://www.ilmatieteenlaitos.fi/avoin-data-lisenssi).
 
 AI tools such as ChatGPT and GitHub Copilot have been used in the implementation of the task description, source code, data files and tests.

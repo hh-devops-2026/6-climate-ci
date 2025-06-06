@@ -9,10 +9,10 @@ The data team needs an automated CI pipeline to:
 - Store these visualizations as CI artifacts
 
 They have a functional Python script that utilizes these technologies:
-- pandas: A Python library for data manipulation and analysis, especially useful for working with structured data like tables and spreadsheets.
-- matplotlib: A widely-used Python library for creating static, animated, and interactive data visualizations (often used for plotting graphs and charts). (You wrote "matlib" but the correct name is "matplotlib.")
-- pytest: A testing framework for Python, making it easy to write simple and scalable test cases for your code.
-- flake8: A tool for checking the style and quality of Python code, helping developers follow best practices and identify errors or formatting issue
+- [pandas](https://pypi.org/project/pandas/): A Python library for data manipulation and analysis, especially useful for working with structured data like tables and spreadsheets.
+- [matplotlib](https://pypi.org/project/matplotlib/): A widely-used Python library for creating static, animated, and interactive data visualizations (often used for plotting graphs and charts).
+- [pytest](https://pypi.org/project/pytest/): A testing framework for Python, making it easy to write simple and scalable test cases for your code.
+- [flake8](https://pypi.org/project/flake8/): A tool for checking the style and quality of Python code, helping developers follow best practices and identify errors or formatting issue
 
 Python script `src/anayze.py`:
 -  Loads the data/temperature.csv file (daily temperature data).
@@ -27,10 +27,10 @@ Your mission is to build and test this automation pipeline using GitHub Actions.
 
 ## Steps
 
-Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci.yml`) by implementing the following steps.
+Your goal is to complete the GitHub Actions workflow file ([`.github/workflows/ci.yml`](./.github/workflows/ci.yml)) by implementing the following steps.
 
 #### Step 1 Define Workflow Triggers
-- Make the workflow run when code is pushed or a pull request is made to the main branch.
+- Make the workflow run when code is **pushed** or a **pull request** is made to the **main** branch.
 
 💡 Hint: Use on: with common GitHub events like push and pull_request.
 
@@ -57,23 +57,24 @@ Your goal is to complete the GitHub Actions workflow file (`.github/workflows/ci
 #### Step 6 **Lint the Code**
 - Add a step to check code style for both `source` and `test` directories. Fix linter errors if there are any.
 
-💡 Hint: Use flake8 to check src/ and tests/ folders. The command is `flake8 <folder_1> <folder_2>`
-
-#### Step 7 **Generate the Plot**
-- Run the analysis script that reads a CSV file and outputs a plot.
-
-💡 Hint: The script accepts input and output paths as arguments. The command is `python src/analyze.py <input_csv> <output_file>`. The csv file that contains data can be found from the `data` directory. The output file name should be `plot.png` and located in the `output` directory.
-
-#### Step 8 **Upload the Plot**
-- Make the generated plot available as a downloadable artifact in GitHub Actions.
-
-💡 Hint: Use the official upload-artifact action and use the following values `Name: climate-plot` and `Path: output/plot.png`
+💡 Hint: Use flake8 to check src/ and tests/ folders. The command is `flake8 <folder_1> <folder_2>`.
+💡 Hinta: flake8 was installed earlier with the [requirements.txt](./requirements.txt) file.
 
 #### Step 9 **Run Tests**
 - Run automated tests to verify your script works correctly.
 
-💡 Hint: Use a Python test framework. The command to run tests is `pytest tests/ -v`
+💡 Hint: Use the `pytest` test framework that was installed earlier with the [requirements.txt](./requirements.txt) file. The command to run tests is `pytest tests/ --verbose`.
 💡 Hint: Set an environment variable `PYTHONPATH` and set its value `${{ github.workspace }}` so the test runner can find the src/ folder.
+
+#### Step 8 **Generate the Plot**
+- Run the analysis script that reads a CSV file and outputs a plot.
+
+💡 Hint: The script accepts input and output paths as arguments. The command is `python src/analyze.py <input_csv> <output_file>`. The csv file that contains data can be found from the [`data` directory](./data/). The output file name should be `plot.png` and located in the `output` directory.
+
+#### Step 9 **Upload the Plot**
+- Make the generated plot available as a downloadable artifact in GitHub Actions.
+
+💡 Hint: Use the official upload-artifact action and use the following values `Name: climate-plot` and `Path: output/plot.png`
 
 ## Result
 

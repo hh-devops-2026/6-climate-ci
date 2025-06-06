@@ -23,7 +23,7 @@ Python script `src/anayze.py`:
 > 
 > For this assignment, Python coding skills are not required. If you encounter linting errors, carefully review the logs and follow the instructions provided
 
-Your mission is to build and test this automation pipeline using GitHub Actions.
+Your mission, if you choose to accept it, is to build and test this automation pipeline using GitHub Actions. It may be a good idea to first experiment with the commands and run them either locally or in a Docker container to understand how everything works. Once you are familiar with the commands, you can proceed to implement the CI pipeline.
 
 ## Steps
 

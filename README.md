@@ -58,7 +58,7 @@ Your goal is to complete the GitHub Actions workflow file ([`.github/workflows/c
 - Add a step to check code style for both `source` and `test` directories. Fix linter errors if there are any.
 
 💡 Hint: Use flake8 to check src/ and tests/ folders. The command is `flake8 <folder_1> <folder_2>`.
-💡 Hinta: flake8 was installed earlier with the [requirements.txt](./requirements.txt) file.
+💡 Hint: flake8 was installed earlier with the [requirements.txt](./requirements.txt) file.
 
 #### Step 9 **Run Tests**
 - Run automated tests to verify your script works correctly.

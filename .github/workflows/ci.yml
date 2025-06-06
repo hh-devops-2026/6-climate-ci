@@ -21,6 +21,14 @@ jobs:
     # Example: flake8 <source_directory> <test_directory>
     - name: Check code style
 
+    # TODO: Run automated tests.
+    # This is a critical step to ensure code correctness.
+    - name: Run tests
+      # TODO: Set up PYTHONPATH environment variable for tests.
+      env:
+         # environment variable to include the source directory.        
+      # Write the command to run tests.
+
     # TODO: Execute the "analyze.py <input_csv> <output_file>" script.
     # In this case, it's generating a plot.
     # Ensure input and output paths are correct.
@@ -35,11 +43,3 @@ jobs:
         name: 
         # Specify the path to the artifact to output directory and file name is plot.png.
         path: 
-
-    # 7. Run automated tests.
-    # This is a critical step to ensure code correctness.
-    - name: Run tests
-      # TODO: Set up PYTHONPATH environment variable for tests.
-      env:
-         # environment variable to include the source directory.        
-      # Write the command to run tests.

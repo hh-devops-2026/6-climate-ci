@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    # TODO: pecify the runner environment to latest ubuntu..
+    # TODO: Specify the runner environment to latest ubuntu..
 
     steps:
     # TODO: Checkout the repository code.

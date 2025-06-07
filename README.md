@@ -15,7 +15,7 @@ They have a functional Python script that utilizes these technologies:
 - [flake8](https://pypi.org/project/flake8/): A tool for checking the style and quality of Python code, helping developers follow best practices and identify errors or formatting issue
 
 Python script `src/anayze.py`:
--  Loads the data/temperature.csv file (daily temperature data).
+-  Loads the data/helsinki2024.csv file (daily temperature data).
 - Calculates the average temperature per month.
 - Draws a chart and saves it to the file.
 
